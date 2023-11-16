@@ -1,4 +1,4 @@
-n = 4
+n = 6
 def is_safe(board, row, col):
     for prev_row in range(row):
         if board[prev_row][col] == 'Q':
