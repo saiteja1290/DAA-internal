@@ -11,9 +11,7 @@ def matrixChainMemoised(p, i, j):
     return dp[i][j]
  
 def MatrixChainOrder(p,n):
-    i = 1
-    j = n - 1   
-    return matrixChainMemoised(p, i, j)
+    return matrixChainMemoised(p, 1, n-1)
 # Driver Code
 arr = [1, 2, 3, 4]
 n = len(arr)
