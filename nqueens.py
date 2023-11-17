@@ -22,3 +22,11 @@ board = [['.' for _ in range(n)] for _ in range(n)]
 solutions = []
 backtrack(0)
 print(solutions)
+#optional
+def is_safe(board, row, col):
+    for prev_row in range(row):
+        if board[prev_row][col] == 'Q' or \
+           board[prev_row][col - (row - prev_row)] == 'Q' or \
+           board[prev_row][col + (row - prev_row)] == 'Q':
+            return False
+    return True
